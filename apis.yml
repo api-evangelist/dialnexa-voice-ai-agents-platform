@@ -1,0 +1,91 @@
+name: DialNexa | Voice AI Agents Platform
+description: >-
+  Voice AI agents platform for outbound and inbound calling, lead qualification, follow-ups, meeting booking,
+  collections, and support workflows. Exposes a REST API, a hosted MCP server, and llms.txt files for programmatically
+  building, deploying, and monitoring AI voice agents.
+url: https://raw.githubusercontent.com/api-evangelist/dialnexa-voice-ai-agents-platform/refs/heads/main/apis.yml
+created: '2026-08-21'
+modified: '2026-08-21'
+specificationVersion: '0.21'
+tags:
+  - voice-ai
+  - conversational-ai
+  - ai-agents
+  - telephony
+  - call-automation
+  - sales-automation
+  - lead-qualification
+  - customer-support
+  - collections
+  - appointment-booking
+  - crm-integration
+  - mcp
+  - india
+apis:
+  - name: DialNexa REST API
+    description: >-
+      REST API to build, deploy, and monitor AI voice agents: create agents, trigger calls, manage batch calls and
+      workflows, work with catalog resources (LLMs, languages, voices, transcribers), manage webhooks, and connect phone
+      numbers. OpenAPI 3.0 contract with ~54 operations across 41 paths. Bearer token authentication.
+    humanURL: https://dialnexa.com/docs/api-reference/introduction
+    baseURL: https://api.dialnexa.com/v1
+    tags:
+      - voice-ai
+      - conversational-ai
+      - ai-agents
+      - telephony
+      - call-automation
+      - sales-automation
+      - lead-qualification
+      - customer-support
+      - collections
+      - appointment-booking
+      - crm-integration
+      - mcp
+      - india
+    properties:
+      - type: OpenAPI
+        url: https://dialnexa.com/docs/api-reference/openapi.json
+      - type: Documentation
+        url: https://dialnexa.com/docs/api-reference/introduction
+      - type: Documentation
+        url: https://dialnexa.com/docs/api-reference/authentication.md
+      - type: LLMsTxt
+        url: https://dialnexa.com/llms.txt
+      - type: LLMsTxt
+        url: https://dialnexa.com/docs/llms.txt
+  - name: DialNexa MCP Server
+    description: >-
+      Hosted MCP server (Streamable HTTP) exposing named tools to inspect and manage DialNexa resources including
+      Agents, Calls, Batch Calls/Campaigns, Workflows, Knowledge Base, Phone Numbers, Reference Data, Templates,
+      Billing, Webhooks, Organization, and Dashboard. Authenticates via OAuth 2.1 (PKCE) or API key with scopes
+      mcp:read, mcp:write, offline_access.
+    humanURL: https://dialnexa.com/docs/
+    baseURL: https://api.dialnexa.com/v1/mcp
+    tags:
+      - voice-ai
+      - conversational-ai
+      - ai-agents
+      - telephony
+      - call-automation
+      - sales-automation
+      - lead-qualification
+      - customer-support
+      - collections
+      - appointment-booking
+      - crm-integration
+      - mcp
+      - india
+    properties:
+      - type: MCPServer
+        url: https://api.dialnexa.com/v1/mcp
+      - type: Documentation
+        url: https://dialnexa.com/docs/
+maintainers:
+  - FN: DialNexa | Voice AI Agents Platform
+    url: https://dialnexa.com
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 97
+  at: '2026-08-21T09:08:21.031Z'
